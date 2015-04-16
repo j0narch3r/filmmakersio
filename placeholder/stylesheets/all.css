@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+body {
+  -webkit-font-smoothing: antialiased!important;
+}
+
+/* ribbon */
+
+.corner-ribbon{
+  width: 200px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.corner-ribbon.sticky{
+  position: fixed;
+}
+.corner-ribbon.top-right{
+  top: 25px;
+  right: -50px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* email */
+
+#mc-embedded-subscribe-form input[type=email] {
+  box-sizing: content-box;
+}
+
+.InputAddOn {
+  display: flex;
+  display: -webkit-flex;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.InputAddOn-field {
+  flex: 1;
+  -webkit-flex: 1;
+  /* field styles */
+  border-radius: 2px 0 0 2px;
+  opacity: 0.9;
+  border: none;
+  background-color: white;
+  font-family: 'Roboto', serif;
+  font-weight: 300;
+  text-align: left;
+  color: black;
+  padding-left: 20px;
+}
+
+.InputAddOn-item {
+  /* item styles */
+  background-color: #188FA7;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  color: white;
+  font-family: 'Roboto', serif;
+  font-weight: 100;
+  padding: 15px;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
